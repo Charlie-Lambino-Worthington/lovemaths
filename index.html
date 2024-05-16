@@ -9,16 +9,38 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<h1 class="heading">
-    <img src="assets/images/logo.png" alt="Love maths logo" class="logo"> Love Maths
-</h1>
-<div class="gamearea">
-
-</div>
-<div class="scorearea">
-<p class="scores">Correct answers <span id="score">0</span></p>
-<p class="scores">Incorrect answers <span id="incorrect">0</span></p>
-</div>
+    <h1 class="heading">
+        <img src="assets/images/logo.png" alt="Love maths logo" class="logo"> Love Maths
+    </h1>
+    <div class="gamearea">
+        <div class="controlsarea">
+            <button class="btn btn--big btn--green">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button class="btn btn--big btn--blue">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button class="btn btn--big btn--orange">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="btn btn--big btn--red">
+                <i class="fas fa-divide"></i>
+            </button>
+        </div>
+        <div class="questionarea">
+            <span id="operand1">0</span>
+            <span id="operator">x</span>
+            <span id="operand2">0</span>
+            <span>=</span>
+            <p class="answer-message">Enter Answer:</p>
+            <input type="number" id="answerbox">
+        </div>
+        <button class="btn btn--gray">Submit Answer!</button>
+    </div>
+    <div class="scorearea">
+        <p class="scores">Correct answers <span id="score">0</span></p>
+        <p class="scores">Incorrect answers <span id="incorrect">0</span></p>
+    </div>
  <script src="assets/js/script.js"></script>   
 </body>
 </html>
